@@ -21,7 +21,7 @@ import org.springframework.web.multipart.MultipartFile;
  */
 @Controller
 public class controller {
-    @RequestMapping("/getData")
+    @RequestMapping("/tugas")
     public String getData(@RequestParam("name") String name,
                           @RequestParam("dates")@DateTimeFormat(pattern ="yyyy-MM-dd") Date date,
                           @RequestParam("image") MultipartFile file,
